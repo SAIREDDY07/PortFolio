@@ -1,0 +1,165 @@
+@media only screen and (min-width : 992px){
+    .mobile{
+      display: none;
+    }
+    .hello {
+      display: flex;
+    }
+    
+    .left-side {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 40px;
+      margin-top: 10rem;
+    }
+    
+    .text {
+      font-size: 7vw;
+      font-weight: bold;
+      font-family: 'DM Serif Display';
+    }
+    
+    .description {
+      margin-top: 10px;
+    }
+    
+    .smalltext {
+      font-size: 1.3vw;
+      color: #2c2c2c;
+      font-family: 'Roboto';
+    }
+    
+    .right-side {
+      flex-shrink: 0;
+      margin-top: 10rem;
+    }
+  
+    .animated-text {
+      animation: colorAnimation 10s infinite;
+    }
+    
+    @keyframes colorAnimation {
+      0% { color: #5268FF; } /* Pastel color 1 */
+      25% { color: #86BBD8; } /* Pastel color 2 */
+      50% { color: #F26419; } /* Pastel color 3 */
+      75% { color: #F6AE2D; } /* Pastel color 4 */
+      100% { color: #5268FF; } /* Back to the initial color */
+    }
+  
+    .casestudies {
+      display: flex;
+      justify-content: center;
+      margin-top: 11.5vw;
+      align-items: center;
+      font-weight: bold;
+      font-family: 'DM Serif Display';
+      font-size: 1.5rem;
+    }
+  
+    .floating-image {
+      animation: floatAnimation 2s infinite alternate;
+    }
+    
+    @keyframes floatAnimation {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+  
+    .scroll-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      background-color: #5268FF;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+      z-index: 3;
+    }
+    
+  }
+  
+  @media only screen and (max-width : 768px){
+    .desktop{
+      display: none;
+    }
+    .text {
+      font-size: 50px;
+      font-weight: bold;
+      font-family: 'DM Serif Display';
+    }
+  
+    .left-side {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    
+    .description {
+      margin-top: 5px;
+    }
+    
+    .smalltext {
+      font-size: 20px;
+      color: #2c2c2c;
+      font-family: 'Roboto';
+    }
+    .animated-text {
+      animation: colorAnimation 10s infinite;
+    }
+    
+    @keyframes colorAnimation {
+      0% { color: #5268FF; } /* Pastel color 1 */
+      25% { color: #86BBD8; } /* Pastel color 2 */
+      50% { color: #F26419; } /* Pastel color 3 */
+      75% { color: #F6AE2D; } /* Pastel color 4 */
+      100% { color: #5268FF; } /* Back to the initial color */
+    }
+  
+    .casestudies {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+      align-items: center;
+      font-weight: bold;
+      font-family: 'DM Serif Display';
+      font-size: 20px;
+    }
+  
+    .floating-image {
+      animation: floatAnimation 2s infinite alternate;
+    }
+    .scroll-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      background-color: #5268FF;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+      z-index: 3;
+    }
+  }
