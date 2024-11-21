@@ -13,14 +13,17 @@ function Navbar() {
   };
 
 
-  // const handleGo = () => {
-  //   const isRootDomain = window.location.pathname === '/';
-  //   const caseStudiesSection = document.getElementById('caseStudies');
-  //   if (caseStudiesSection) {
-  //     caseStudiesSection.scrollIntoView({ behavior: 'smooth' });
-  //   }
-  //   navigate('/');
-  // };
+  const handleExp = () => {
+    const isRootDomain = window.location.pathname === '/';
+    if(!isRootDomain){
+      navigate('/');
+    }
+    const experience = document.getElementById('Experience');
+    if (experience) {
+      experience.scrollIntoView({ behavior: 'smooth' });
+    }
+    navigate('/');
+  };
 
   // const handleGomob = () => {
   //   const isRootDomain = window.location.pathname === '/';
@@ -60,18 +63,18 @@ function Navbar() {
     <div>
       <div className="navbar">
         <div className="logo-container" onClick={() =>  navigate('/')}>
-        &lt;Sai Kumar Reddy/&gt;
+        &lt;SaiKumarReddy/&gt;
         </div>
         <div className='options'>
-        {/* <div
-            className="Experience"
-            onClick={handleGo}
+        <div
+            className="case"
+            onClick={handleExp}
           >
-            Experience
-          </div> */}
-          <div className="case" onClick={() => navigate('/Experience')}>
             EXPERIENCE
           </div>
+          {/* <div className="case" onClick={() => navigate('/Experience')}>
+            EXPERIENCE
+          </div> */}
           <div className="case" onClick={() => navigate('/Projects')}>
             PROJECTS
           </div>
@@ -108,23 +111,4 @@ function Navbar() {
 
 export default Navbar;
 
-// import React from "react";
-// // import '../assets/styles.css';
 
-// const Navbar = () => {
-
-//   return (
-//     <nav className="navbar">
-//       <div className="container">
-//         <a href="#" className="logo">Sai Kumar Reddy</a>
-//         <ul>
-//           <li><a href="#experience">Experience</a></li>
-//           <li><a href="#projects">Projects</a></li>
-//           <li><a href="#contact">Contact</a></li>
-//         </ul>
-//       </div>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;

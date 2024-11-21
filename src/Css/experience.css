@@ -1,19 +1,23 @@
-.projects-section {
+.experience-section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    
     margin-left: 40px;
-}
-
-.projects-section h2 {
+    
+  }
+  
+  .experience-section h2 {
     font-size: 50px;
     font-weight: bold;
+    align-items: flex-start;
+
     font-family: 'DM Serif Display', serif;
     margin-bottom: 3rem;
     color: #5268FF;
-}
-
-.project-item {
+  }
+  
+  .experience-item {
     display: flex;
     flex-direction: column;
     margin-bottom: 3rem;
@@ -21,32 +25,39 @@
     background-color: #f7f9fc;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.project-item h3 {
+  }
+  
+  .experience-item h3 {
     font-size: 2.5vw;
     font-weight: bold;
     font-family: 'DM Serif Display', serif;
     color: #2c2c2c;
-}
-
-.project-item p {
+  }
+  
+  .experience-item p {
     font-size: 1.3vw;
     font-family: 'Roboto', sans-serif;
-    color: #888;
+    color: #555;
     margin: 5px 0;
-}
-
-.project-item ul {
+  }
+  
+  .experience-item .duration {
+    font-size: 1.1vw;
+    font-weight: bold;
+    color: #888;
+  }
+  
+  .experience-item ul {
     margin-top: 1rem;
     padding-left: 2rem;
     list-style-type: disc;
-}
-
-.project-item ul li {
+  }
+  
+  .experience-item ul li {
     font-size: 1.2vw;
     color: #555;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 10px;
     line-height: 1.6;
-}
+  }
+  
